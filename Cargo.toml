@@ -1,0 +1,23 @@
+[package]
+name = "bvm"
+version = "0.1.0"
+edition = "2021"
+authors = ["= <=>"]
+description = "a virtual machine for writing silly programs"
+license = "MIT"
+
+[lints.rust]
+unsafe_code = { level = "deny", priority = -1 }
+
+[lints.clippy]
+enum_glob_use = { level = "deny", priority = -2 }
+pedantic = { level = "deny", priority = -3 }
+nursery = { level = "deny", priority = -4 }
+unwrap_used = { level = "deny", priority = -5 }
+expect_used = { level = "deny", priority = -6 }
+
+[dependencies]
+
+
+[[bin]]
+name = "vm"
